@@ -94,7 +94,7 @@ const Footer = () => {
       <p className="font-bold"  style={{fontSize:'238px',opacity:'10%'}}>OUTDOORS</p>
     </div>
     <div className="py-0 text-center md:hidden">
-      <p className="font-bold"  style={{fontSize:'50px',opacity:'10%'}}>OUTDOORS</p>
+      <p className="font-bold"  style={{fontSize:'70px',opacity:'10%'}}>OUTDOORS</p>
     </div>
      </div>
     </footer>

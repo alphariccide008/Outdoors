@@ -11,14 +11,18 @@ const Hero = () => {
                 <p className='pr-[5%] text-center md:text-start'>increase brand visibility and revenue with Outdoor advertising in Nigeria</p>
                 
                 <div className="flex pb-32">
+                    <div className="w-1/2">
                     <Link to="#"
                     className="py-2 px-6 text-white bg-[#0A6535] rounded-3xl hover:bg-[#085827] transition-all duration-300">
                         Get Started
                     </Link>
-                    <Link to="#"
-                    className="py-2  mx-4 px-6 text-[#085827] border border-[#085827] rounded-3xl hover:bg-[#085827] transition-all duration-300">
+                    </div>
+                   <div className="w-1/2 text-sm">
+                   <Link to="#"
+                    className="py-2  mx-4 px-3 text-[#085827] border border-[#085827] rounded-3xl hover:bg-[#085827] transition-all duration-300">
                         Get discounted Billboard
                     </Link>
+                   </div>
                 </div>
 
             </div>

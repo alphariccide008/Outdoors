@@ -1,15 +1,15 @@
 import { useState } from "react";
-import { navLinks } from "../data";
+import { navLinks } from "../data"; // Ensure `navLinks` is correctly imported
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
-import { logo } from "../assets/icons";
+import { logo } from "../assets/icons"; // Ensure `logo` points to a valid image
 import { Link, NavLink } from "react-router-dom";
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false); // State to manage the hamburger menu
 
   const handleMenuToggle = () => {
-    setMenuOpen(!menuOpen); // Toggle menu visibility
+    setMenuOpen((prev) => !prev); // Toggle menu visibility
   };
 
   return (
@@ -21,8 +21,12 @@ const NavBar = () => {
     >
       <nav className="flex justify-between items-center max-w-[1200px] mx-auto px-4 sm:px-8">
         {/* Logo */}
-        <Link to="/" className="text-[30px]">
-          <img src={logo} style={{ height: "50px", width: "70px" }} alt="logo" />
+        <Link to="/" aria-label="Home" className="text-[30px]">
+          <img
+            src={logo}
+            style={{ height: "50px", width: "70px" }}
+            alt="Company logo"
+          />
         </Link>
 
         {/* Desktop Menu */}

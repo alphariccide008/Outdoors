@@ -5,7 +5,7 @@ import { FaArrowRight } from 'react-icons/fa';
 const Hero = () => {
   return (
     <div className='pt-24 bg-[#E6F6F4] px-[10%]'>
-        <div className="md:flex">
+        <div className="md:flex w-full">
             <div className="flex-col md:w-1/2">
                 <h1 className='text-3xl pb-3 text-center md:text-start'>Increase <span className='text-[#FD6821]'>Awareness</span></h1>
                 <h1 className='text-3xl pb-5 text-center md:text-start'>Drive Sales</h1>

@@ -31,7 +31,7 @@ const Footer = () => {
             <button className="text-white py-2 px-10 rounded-lg absolute  ml-[-10px] bg-[#36B24A]">Subscribe</button>
           </div>
       </div>
-      <div className="md:flex  mb-5 text-white md:justify-center  md:items-center mx-[5%]">
+      <div className="md:flex hidden mb-5 text-white md:justify-center  md:items-center mx-[5%]">
         <div className="flex-col md:w-1/3 pt-[1%] ">
           <h4 className="font-semibold pb-2">Helpful Links</h4>
           <ul className="text-sm space-y-4 text-[#FAE6E8]" style={{fontSize: '12px'}}>
@@ -77,6 +77,16 @@ const Footer = () => {
         </div>
         
       </div>
+      <div className="md:hidden flex flex-col items-center justify-center">
+         <div className="flex justify-center py-4">
+             <img src={footerImg} style={{ height: '35px' }} alt="" />
+         </div>
+        <div className="flex items-center justify-center mx-2 text-center mb-4">
+          <input type="text" className="py-2 px-10 rounded-md" placeholder="Your email address"/>
+          <button className="text-white py-2 px-5 rounded-lg ml-[-10px] bg-[#36B24A]">Subscribe</button>
+        </div>
+      </div>
+
 
     <hr className="py-3 mx-[3%]"/>
     <div className="justify-center flex-col flex items-center mx-[40%] mb-5">

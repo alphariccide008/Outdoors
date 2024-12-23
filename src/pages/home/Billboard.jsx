@@ -64,24 +64,24 @@ const Billboard = () => {
                 <div className="flex mb-3">
                     <div className="flex-col my-2 w-1/2 text-start">
                         <label htmlFor="" className="font-semibold" style={{fontSize:'12px'}}>Select Type</label><br />
-                        <select name="" className="border w-full bg-[#E6E6E6] mr-1 py-5 rounded-xl" id="" style={{fontSize:'12px'}}>
+                        <select name="" className="border w-full bg-[#E6E6E6] mr-1 py-3 rounded-xl" id="" style={{fontSize:'12px'}}>
                             <option value="" >Select Type</option>
                         </select>
                     </div>
                     <div className="w-1/2 my-2 text-start">
                     <label htmlFor="" className="font-semibold" style={{fontSize:'13px'}}>Select Type</label><br />
-                        <select name="" id="" className="border bg-[#E6E6E6] ml-1 rounded-xl  w-full py-5" style={{fontSize:'12px'}}>
+                        <select name="" id="" className="border bg-[#E6E6E6] ml-1 rounded-xl  w-full py-3" style={{fontSize:'12px'}}>
                             <option value=""className="" >Select Type</option>
                         </select>
                     </div>
                 </div>
                 <div className="mb-5 text-start">
                     <label htmlFor="" className="font-semibold " style={{fontSize:'13px'}}>Select Type</label><br />
-                        <select name="" id="" className="border bg-[#E6E6E6] rounded-xl w-full py-5" style={{fontSize:'12px'}}>
+                        <select name="" id="" className="border bg-[#E6E6E6] rounded-xl w-full py-3" style={{fontSize:'12px'}}>
                             <option value="">Select Type</option>
                         </select>
                     </div>
-                    <button type="submit" className="bg-[#0A6535] mb-4 rounded-xl py-[2%]  text-white  w-full" style={{fontSize:'13px'}}>Search </button>
+                    <button type="submit" className="bg-[#0A6535] mb-4 rounded-xl py-[3%]  text-white  w-full" style={{fontSize:'13px'}}>Search </button>
                </form>
             </div>
         </div>

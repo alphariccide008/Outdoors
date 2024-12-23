@@ -5,7 +5,7 @@ body {
   
 
 .market-banner{
-    background-image:linear-gradient(to left, rgba(10, 10, 11, 0.6),rgba(10, 10, 11, 0.6)), url("/public/Campaign.jpeg");  
+    background-image:linear-gradient(to left, rgba(10, 10, 11, 0.6),rgba(10, 10, 11, 0.6)), url("/Campaign.jpeg");  
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

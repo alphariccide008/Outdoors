@@ -1,6 +1,6 @@
 .june{
     color: red;
 }
-.main{
-    color:rgb(86, 240, 189)
+.border-color{
+    border-right: 1px solid black;
 }

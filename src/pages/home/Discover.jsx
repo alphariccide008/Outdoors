@@ -46,10 +46,10 @@ const Carousel = () => {
                 <h1><i>OUR <span className="text-[#FD6821]">EXPERTISE</span></i></h1>
             </div>
 
-            {/* Slides */}
+            {/* desktop Slides */}
             <div className="overflow-hidden rounded-lg">
                 <div
-                className="flex transition-transform duration-[10s] ease-in-out" // Slower transition (10 seconds)
+                className="hidden md:flex transition-transform duration-[10s] ease-in-out" // Slower transition (10 seconds)
                 style={{
                     transform: `translateX(-${currentIndex * 33.3333}%)`, 
                 }}
@@ -57,6 +57,25 @@ const Carousel = () => {
                 {slides.map((slide) => (
                     <div key={slide.id}  className="w-1/3 mx-2 border px-4 pt-[3%]  rounded-lg flex-shrink-0"
                     style={{ height: "200px" , width:'20%' }}>
+                    
+                    <h1>{slide.header}</h1>
+                    <p className="text-sm text-[#595959]" style={{fontSize: '10px'}}>{slide.bodyOf}</p>
+                    
+                    </div>
+                ))}
+                </div>
+            </div>
+            {/* Mobile slides */}
+            <div className="overflow-hidden rounded-lg">
+                <div
+                className="md:hidden flex transition-transform duration-[10s] ease-in-out" // Slower transition (10 seconds)
+                style={{
+                    transform: `translateX(-${currentIndex * 33.3333}%)`, 
+                }}
+                >
+                {slides.map((slide) => (
+                    <div key={slide.id}  className="w-1/3 mx-2 border px-4 pt-[3%]  rounded-lg flex-shrink-0"
+                    style={{ height: "200px" , width:'50%' }}>
                     
                     <h1>{slide.header}</h1>
                     <p className="text-sm text-[#595959]" style={{fontSize: '10px'}}>{slide.bodyOf}</p>
@@ -81,7 +100,7 @@ const Carousel = () => {
             </button>
         </div>
 
-        <div className="mx-[10%] px-[5%] py-[3%] text-center">
+        <div className="mx-[10%] px-[3%] lg:px-[5%] py-[3%] text-center">
             <h2 className="font-semibold pb-5">Conquer Nigeria Market</h2>
             <p className="text-sm text-[#595959]" style={{fontSize:'12px'}}>
             Penetrating the Nigerian market requires a partner who understands the market trends of the country.  At Outdoors.ng, a leading advertising agency in Nigeria, we're more than just marketing specialists – we're cultural guides.
@@ -90,11 +109,11 @@ const Carousel = () => {
             </p>
 
         </div>
-        <div className="flex items-center rounded-lg mb-5">
-                <div className=" flex justify-center items-center">
+        <div className="items-center rounded-lg mb-5 p-[3%] lg:px-[7%]">
+                <div className=" md:flex justify-center items-center">
                 {slides1.map((slide) => (
-                    <div key={slide.id}  className="w-1/3 mx-2 flex-col border px-4 pt-[3%]  rounded-lg"
-                    style={{ height: "200px" , width:'20%' }}>
+                    <div key={slide.id}  className="lg:w-1/3 my-[2%]  lg:mx-2 flex-col border px-4 pt-[3%]  rounded-lg"
+                    style={{ height: "200px"  }}>
                     
                     <h1>{slide.header}</h1>
                     <p className="text-sm text-[#595959]" style={{fontSize: '10px'}}>{slide.bodyOf}</p>
@@ -102,7 +121,7 @@ const Carousel = () => {
                     </div>
                 ))}
                 </div>
-            </div>
+        </div>
     
     </>
     

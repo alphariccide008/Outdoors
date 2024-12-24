@@ -43,10 +43,10 @@ const Carousel = () => {
         <h1 className="text-2xl pb-5 pl-3">PORTFOLIO</h1>
       </div>
 
-      {/* Slides */}
+      {/*Desktop Slides */}
       <div className="overflow-hidden rounded-lg">
         <div
-          className="flex transition-transform duration-[10s] ease-in-out" // Slower transition (10 seconds)
+          className="hidden  md:flex transition-transform duration-[10s] ease-in-out" // Slower transition (10 seconds)
           style={{
             transform: `translateX(-${currentIndex * 33.3333}%)`, // Ensure the images align and take full width
           }}
@@ -58,6 +58,26 @@ const Carousel = () => {
               alt={slide.alt}
               className="w-1/3 mx-2  rounded-lg flex-shrink-0"
               style={{ height: "200px" , width:'20%' }} // Keeping the same height as before
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* Mobile Slide  */}
+      <div className="overflow-hidden rounded-lg">
+        <div
+          className="md:hidden flex transition-transform duration-[10s] ease-in-out" // Slower transition (10 seconds)
+          style={{
+            transform: `translateX(-${currentIndex * 33.3333}%)`, // Ensure the images align and take full width
+          }}
+        >
+          {slides.map((slide) => (
+            <img
+              key={slide.id}
+              src={slide.image}
+              alt={slide.alt}
+              className="w-1/3 mx-2  rounded-lg flex-shrink-0"
+              style={{ height: "170px" , width:'50%' }} // Keeping the same height as before
             />
           ))}
         </div>

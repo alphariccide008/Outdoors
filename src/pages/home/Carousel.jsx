@@ -26,6 +26,7 @@ const Carousel = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length); // Restart the slider after the last image
   };
 
+
   const handlePrev = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + slides.length) % slides.length); // Navigate backward
   };

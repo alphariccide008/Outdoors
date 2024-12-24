@@ -7,7 +7,7 @@ const Hero = () => {
     <div className='pt-24 bg-[#E6F6F4] px-[10%]'>
         <div className="md:flex w-full">
             <div className="flex-col md:w-1/2">
-                <h1 className='text-3xl pb-3 font-semibold text-center md:text-start text-[#042313]'>Increase <span className='text-[#FD6821]'>Awareness</span></h1>
+                <h1 className='text-3xl pb-3 font-semibold text-center md:text-start text-[#042313]'>Increase <span className='text-[#FD6821] google-font'>Awareness</span></h1>
                 <h1 className='text-3xl pb-5 text-center md:text-start font-semibold text-[#042313]'>Drive Sales</h1>
                 <p className='pr-[5%] text-center md:text-start text-sm'>increase brand visibility and revenue with Outdoor advertising in Nigeria</p>
                 

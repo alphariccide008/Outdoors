@@ -4,14 +4,14 @@ const Overview = () => {
   return (
     <>
         <div className=" mx-[10%] mt-[10%]">
-            <div className="flex items-center space-x-4">
-                <div className=" text-2xl w-[10%] text-center">OVERVIEW</div>
-                <div className="  flex-1 h-[2px] bg-[#480207]"></div>
-                <div className="w-auto px-2 flex items-center space-x-1">
-                    
-                    <FaStar className="text-[#480207] text-2xl" />
-                </div>
-            </div>
+        <div className="flex items-center space-x-4 flex-wrap">
+  <div className="text-2xl w-auto text-center">OVERVIEW</div>
+  <div className="flex-1 h-[2px] bg-[#480207]"></div>
+  <div className="w-auto px-2 flex items-center space-x-1">
+    <FaStar className="text-[#480207] text-2xl" />
+  </div>
+</div>
+
             <div className="md:flex mt-[5%]">
                 <div className="flex flex-col items-center justify-center md:w-1/2 m-3 py-8 border border-[#E6E6E6] p-4 text-center">
                     <h1 className="text-lg font-bold" style={{fontSize:'16px'}}>Google</h1>

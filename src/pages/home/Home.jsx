@@ -14,6 +14,8 @@ import HomeDeals from "./HomeDeals";
 import TopAdvertising from "./TopAdvertising";
 import { Faq } from "../../components/Faq";
 import Overview from "./Overview";
+import UseCases from "./UseCases";
+import StaticBillboard from "./StaticBillboard";
 
 
 
@@ -33,6 +35,8 @@ const Home = () => {
      <HomeDeals/>
      <Banner/>
      <TopAdvertising/>
+     <UseCases/>
+     <StaticBillboard/>
      <Faq/>
      <Overview/>
      <Blog/>

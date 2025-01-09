@@ -6,7 +6,7 @@ import { FaArrowRight} from 'react-icons/fa';
 const Getstarted = () => {
   return (
    <>
-        <div className="md:flex lg:px-[10%] my-[4%] bg-[#E6F6F4]">
+        <div className="md:flex lg:px-[10%] my-[4%] py-[3%] bg-[#E6F6F4]">
            <div className="flex-col md:w-1/2 px-3  py-[5%]" style={{fontSize:'20px'}}>
                 <h1 className="py-3 font-semibold lg:text-start text-center text-[#003B33]">Ready to tell your brand story in a way that gets noticed?</h1>
                 <p className="text-sm text-[#595959] lg:text-start text-center">Contact Outdoors today and let's craft content that earns the spotlight.</p>

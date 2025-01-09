@@ -1,7 +1,7 @@
 const BrandStory = () => {
   return (
-    <>
-        <div className="mx-[10%] bg-[#0d1912] px-[2%] rounded-lg">
+    <div className="hidden">
+        <div className="mx-[10%] bg-[#0d1912] px-[2%]  rounded-lg">
             <h1 className="text-4xl text-[#FCF9E6] py-7">TELL YOUR BRAND STORY</h1>
             <div className="flex">
                 <div className="w-1/2 text-white px-9" style={{fontSize:'12px'}}>
@@ -26,7 +26,7 @@ const BrandStory = () => {
         <div className="mx-[10%] mt-[-10px] px-[2%]" style={{backgroundColor:'rgb(239, 83, 109)'}}>
             <h1 className="text-white text-3xl">This is working and give me the colore i be needin </h1>
         </div>
-    </>
+    </div>
   )
 }
 export default BrandStory

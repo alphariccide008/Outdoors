@@ -1,7 +1,7 @@
 import './Home.css'
 import { Link } from "react-router-dom";
 import { FaArrowRight} from 'react-icons/fa';
-import Getstarted from '../../components/getStarted';
+import Getstarted from '../../components/Getstarted';
 const findBillboard = () => {
   return (
     <>

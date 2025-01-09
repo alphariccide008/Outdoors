@@ -24,12 +24,12 @@ const Carousel = () => {
 
   // Handle slide change
   const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % 3000); // Restart the slider after the last image
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length); // Restart the slider after the last image
   };
 
 
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + 1000) % 1000); // Navigate backward
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + slides.length) % slides.length); // Navigate backward
   };
 
   // Auto slide functionality
@@ -41,7 +41,7 @@ const Carousel = () => {
   return (
     <>
         <div className="relative px-[1%] py-[3%]">
-            <div className="text-3xl pb-5 pl-3 font-semibold">
+            <div className="text-3xl pb-5 pl-10 font-semibold">
                 <h1 className=" pb-5 "><i>DISCOVER</i> </h1>
                 <h1><i>OUR <span className="text-[#FD6821]">EXPERTISE</span></i></h1>
             </div>
@@ -125,7 +125,7 @@ const Carousel = () => {
     
     </>
     
-  );
+  );h
 };
 
 export default Carousel;

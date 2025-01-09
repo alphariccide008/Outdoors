@@ -40,7 +40,7 @@ const Carousel = () => {
   return (
     <div className="relative px-[1%] py-[3%]">
       <div>
-        <h1 className="text-2xl pb-5 pl-3">PORTFOLIO</h1>
+        <h1 className="text-2xl pb-5 pl-10">PORTFOLIO</h1>
       </div>
 
       {/*Desktop Slides */}

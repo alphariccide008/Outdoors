@@ -10,7 +10,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     min-height: 200px;
-} 
+}
+
 
 .google-font{
     font-family: 'Handlee', cursive;
@@ -19,4 +20,48 @@ body {
 
 .border-color{
     border-right: 1px solid black;
+}
+
+.check-color{
+    color: rgb(239, 83, 109);
+}
+.bill1{
+    background-image:linear-gradient(to left, rgba(10, 10, 11, 0.4),rgba(10, 10, 11, 0.4)), url("/Billboardimage.jpeg");  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bill2{
+    background-image:linear-gradient(to left, rgba(10, 10, 11, 0.4),rgba(10, 10, 11, 0.4)), url("/Campaign.jpeg");  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bill3{
+    background-image:linear-gradient(to left, rgba(10, 10, 11, 0.4),rgba(10, 10, 11, 0.4)), url("/TARABA2.png");  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bill4{
+    background-image:linear-gradient(to left, rgba(10, 10, 11, 0.4),rgba(10, 10, 11, 0.4)), url("/Campaign.jpeg");  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bill5{
+    background-image:linear-gradient(to left, rgba(10, 10, 11, 0.4),rgba(10, 10, 11, 0.4)), url("/Billboardimage.jpeg");  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bill6{
+    background-image:linear-gradient(to left, rgba(10, 10, 11, 0.4),rgba(10, 10, 11, 0.4)), url("/TARABA2.png");  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }

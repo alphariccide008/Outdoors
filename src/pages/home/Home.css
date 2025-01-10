@@ -67,20 +67,17 @@ body {
 }
 
 .static1{
-    background-image:linear-gradient(to left, rgba(10, 10, 11, 0.4),rgba(10, 10, 11, 0.4)), url("/TARABA2.png");  
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+   min-height: 700px;
 }
 .static2{
-    background-image:linear-gradient(to left, rgba(10, 10, 11, 0.4),rgba(10, 10, 11, 0.4)), url("/TARABA2.png");  
-    background-size: cover;
+    background-image:linear-gradient(to left, rgba(10, 10, 11, 0.4),rgba(10, 10, 11, 0.4)), url("/LED.jpeg");  
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 .static3{
-    background-image:linear-gradient(to left, rgba(10, 10, 11, 0.4),rgba(10, 10, 11, 0.4)), url("/TARABA2.png");  
-    background-size: cover;
+    background-image:linear-gradient(to left, rgba(10, 10, 11, 0.4),rgba(10, 10, 11, 0.4)), url("/Mobile.jpeg");  
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }

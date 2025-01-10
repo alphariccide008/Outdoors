@@ -100,8 +100,8 @@ const Carousel = () => {
             </button>
         </div>
 
-        <div className="mx-[10%] px-[3%] lg:px-[5%] py-[3%] text-center">
-            <h2 className="font-semibold pb-5">Conquer Nigeria Market</h2>
+        <div className="mx-[10%] px-[3%] lg:px-[5%] pt-[10%] pb-[3%] text-center">
+            <h2 className="font-semibold text-2xl pb-5">Conquer Nigeria Market</h2>
             <p className="text-sm text-[#595959]" style={{fontSize:'12px'}}>
             Penetrating the Nigerian market requires a partner who understands the market trends of the country.  At Outdoors.ng, a leading advertising agency in Nigeria, we're more than just marketing specialists – we're cultural guides.
             Our deep understanding of the Nigerian Market allows us to craft marketing campaigns that connect on a deeper level. We leverage local insights and trends to ensure your brand message hits the right note with your target audience.

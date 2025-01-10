@@ -15,7 +15,7 @@ import {
 const Footer = () => {
   
   return (
-    <footer className="w-full mt-44 text-white bg-[#000000] sm:px-16 pb-8  mb-3 ">
+    <footer className="w-full mt-10 text-white bg-[#000000] sm:px-16 pb-8  mb-3 ">
     
      <div>
      <div className=" md:flex hidden pt-7  pb-5 md:justify-center md:items-center mx-[5%] ">

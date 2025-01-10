@@ -6,7 +6,7 @@ import banner2 from '../../assets/images/awards/MEA.png';
 const Banner = () => {
   return (
     <>
-      <div className="lg:px-[8%] bg-[#e3f2e6] py-[7%] flex flex-col items-center">
+      <div className="lg:px-[8%] my-28 bg-[#e3f2e6] py-[7%] flex flex-col items-center">
         {/* Desktop View */}
         <div className="md:flex  pb-5 justify-center items-center hidden w-full">
           <div className="w-1/3 flex justify-center">

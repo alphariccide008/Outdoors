@@ -34,13 +34,13 @@ const Campaign = () => {
 
   return (
    <>
-         <div className="relative px-[1%] py-[3%]">
+         <div className="relative px-[1%] mt-[3%]  py-[3%]">
       <div>
         <h1 className="text-3xl py-3 pb-5 pl-10">CAMPAIGN</h1>
       </div>
 
       {/*Desktop Slides */}
-      <div className="overflow-hidden my-5 rounded-lg">
+      <div className="overflow-hidden my-3 rounded-lg">
         <div
           className="hidden  md:flex transition-transform duration-[10s] ease-in-out" // Slower transition (10 seconds)
           style={{
@@ -99,7 +99,7 @@ const Campaign = () => {
         &#8250;
       </button> */}
     </div>
-    <div className="mx-[15%] flex flex-col items-center text-center">
+    <div className="mx-[15%] mt-[4%] mb-[4%] flex flex-col items-center text-center">
         {/* Heading */}
         <h1 className="lg:text-2xl font-bold mt-2 mb-4" style={{ fontSize: '17px' }}>
             Xpark360s Creative Campaign for LetsChat Lifelong Connections Success
@@ -113,7 +113,7 @@ const Campaign = () => {
 
 
         {/* Ready to Grow Section */}
-        <div className="py-[3%]">
+        <div className="py-[9%]">
             <h1 className="font-bold text-2xl py-3">
             <i>READY TO <span className="text-[#FD6821]">GROW</span> WITH AN ADVERTISING COMPANY?</i>
             </h1>

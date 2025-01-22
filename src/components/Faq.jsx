@@ -25,14 +25,14 @@ export const Faq = () => {
     <>
         <div className=" mx-[10%]">
             <div className="flex items-center space-x-4">
-                <div className=" text-2xl w-[10%] text-center">FAQ</div>
+                <div className=" md:text-3xl text-2xl w-[10%] text-center">FAQ</div>
                 <div className="  flex-1 h-[2px] bg-[#480207]"></div>
                 <div className="w-auto px-2 flex items-center space-x-1">
                     
                     <FaStar className="text-[#480207] text-2xl" />
                 </div>
             </div>
-            <div className="flex flex-col text-sm mt-8 px-[5%]">
+            <div className="flex flex-col text-sm mt-8 md:px-[5%] px-[2%]">
       {/* Question Section */}
       <div className="flex justify-between items-center cursor-pointer" onClick={toggleDropdown}>
         <div className="w-1/2">
@@ -53,7 +53,7 @@ export const Faq = () => {
                   </div>
                 </div>
             </div>
-            <div className="flex flex-col text-sm mt-8 px-[5%]">
+            <div className="flex flex-col text-sm mt-8 md:px-[5%] px-[2%]">
                 {/* Question Section */}
                 <div className="flex justify-between items-center cursor-pointer" onClick={toggleDropdownSec}>
                     <div className="w-1/2">
@@ -74,7 +74,7 @@ export const Faq = () => {
                   </div>
                 </div>
             </div>
-            <div className="flex flex-col text-sm mt-8 px-[5%]">
+            <div className="flex flex-col text-sm mt-8 md:px-[5%] px-[2%]">
                 {/* Question Section */}
                 <div className="flex justify-between items-center cursor-pointer" onClick={toggleDropdownThird}>
                     <div className="w-1/2">
@@ -95,7 +95,7 @@ export const Faq = () => {
                   </div>
                 </div>
             </div>
-            <div className="flex flex-col text-sm mt-8 px-[5%]">
+            <div className="flex flex-col text-sm mt-8 md:px-[5%] px-[2%]">
             {/* Question Section */}
             <div
               className="flex justify-between items-center cursor-pointer"
@@ -116,10 +116,11 @@ export const Faq = () => {
               }`}
             >
               <div className="mt-4 md:w-1/2 pt-2">
-                <p className="text-[#334335]" style={{ fontSize: "12px" }}>
+                <p className="text-[#334335] " style={{ fontSize: "12px" }}>
                   It depends on your goals. While coding can help you understand technology better, many tools are designed for
                   non-coders. These tools simplify tasks such as building websites or apps without requiring programming skills.
                 </p>
+                
               </div>
             </div>
           </div>

@@ -28,7 +28,7 @@ export const navLinks = [
   { path: "/about-us", name: "About Us" },
   { path: "/contact", name: "Contact" },
   { path: "/blog", name: "Blog" },
-  { path: "/valued", name: "Valued added services"},
+  
 ];
 
 export const trustedIcons = [

@@ -61,8 +61,7 @@ const NavBar = () => {
                   <NavLink
                     to="/campaignmonitoring"
                     className="block px-4 py-2 text-sm hover:bg-gray-200"
-                    onClick={() => setDropdownOpen(false)}
-                  >
+                    onClick={() => setMenuOpen(false)}                  >
                     Monitoring
                   </NavLink>
                 </li>
@@ -71,7 +70,7 @@ const NavBar = () => {
                   <NavLink
                     to="/paidoutdoors"
                     className="block px-4 py-2 text-sm hover:bg-gray-200"
-                    onClick={() => setDropdownOpen(false)}
+                    onClick={() => setMenuOpen(false)}
                   >
                     Paid Outdoor Monitoring
                   </NavLink>
@@ -81,8 +80,7 @@ const NavBar = () => {
                   <NavLink
                     to="/orderforprinting"
                     className="block px-4 py-2 text-sm hover:bg-gray-200"
-                    onClick={() => setDropdownOpen(false)}
-                  >
+                    onClick={() => setMenuOpen(false)}                  >
                     Order For Printing
                   </NavLink>
                 </li>
@@ -91,8 +89,7 @@ const NavBar = () => {
                   <NavLink
                     to="/orderforinstallation"
                     className="block px-4 py-2 text-sm hover:bg-gray-200"
-                    onClick={() => setDropdownOpen(false)}
-                  >
+                    onClick={() => setMenuOpen(false)}                  >
                     Order For Installation
                   </NavLink>
                 </li>
@@ -101,8 +98,7 @@ const NavBar = () => {
                   <NavLink
                     to="/orderfordeployent"
                     className="block px-4 py-2 text-sm hover:bg-gray-200"
-                    onClick={() => setDropdownOpen(false)}
-                  >
+                    onClick={() => setMenuOpen(false)}                  >
                     Order For Deployment
                   </NavLink>
                 </li>
@@ -111,8 +107,7 @@ const NavBar = () => {
                   <NavLink
                     to="/radioandtv"
                     className="block px-4 py-2 text-sm hover:bg-gray-200"
-                    onClick={() => setDropdownOpen(false)}
-                  >
+                    onClick={() => setMenuOpen(false)}                  >
                     Radio and Tv
                   </NavLink>
                 </li>
@@ -158,7 +153,7 @@ const NavBar = () => {
               {/* Services Dropdown */}
               <li className="w-full py-2">
                 <button
-                  className="flex items-center block w-full text-sm py-2 px-4 hover:bg-gray-200 rounded text-left"
+                  className="flex items-center w-full text-sm py-2 px-4 hover:bg-gray-200 rounded text-left"
                   onClick={handleDropdownToggle}
                 >
                  Value Added Services <FaChevronDown className="ml-1" />

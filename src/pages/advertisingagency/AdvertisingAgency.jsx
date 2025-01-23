@@ -12,7 +12,7 @@ import { Faq } from '../../components/Faq'
 const AdvertisingAgency = () => {
   return (
     <>
-    <div className="advert-banner">
+    <div className="ad-banner">
       <div className='text-center md:pt-[18%] pt-[40%] lg:mx-[20%]'>
          <h1 className='text-[37px]  font-semibold text-[#D9D9D9] px-3 pb-5'>See Your Campaign’s Impact in Real Time</h1>
          <p className='text-[18px] text-[#B0B0B0] px-2 pb-5'>Increase your brand visibility  Connect with your audience and build brand loyalty</p>

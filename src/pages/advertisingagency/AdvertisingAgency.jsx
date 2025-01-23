@@ -131,8 +131,7 @@ const AdvertisingAgency = () => {
       </div>
     </div>
 
-    {/* Get started */}
-    <GetStarted/>
+  
 
     {/* Frequently Asked Questions */}
     <Faq/>

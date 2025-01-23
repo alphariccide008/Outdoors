@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { navLinks } from "../data"; // Ensure `navLinks` is correctly imported
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
@@ -9,6 +9,7 @@ import { Link, NavLink } from "react-router-dom";
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false); // State to manage the hamburger menu
   const [dropdownOpen, setDropdownOpen] = useState(false); // State for dropdown menu
+  const [scrolled, setScrolled] = useState(false); // State to track scroll
 
   const handleMenuToggle = () => {
     setMenuOpen((prev) => !prev); // Toggle menu visibility
@@ -18,12 +19,23 @@ const NavBar = () => {
     setDropdownOpen((prev) => !prev); // Toggle dropdown visibility
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <header
-      className="fixed w-full bg-[#E6F6F4] z-50 shadow-sm"
-      style={{
-        height: "70px",
-      }}
+      className={`fixed w-full z-50 transition-all duration-300 ${
+        scrolled ? "bg-[#E6F6F4] shadow-md" : "bg-transparent"
+      }`}
+      style={{ height: "70px" }}
     >
       <nav className="flex justify-between items-center max-w-[1200px] mx-auto px-4 sm:px-8">
         {/* Logo */}
@@ -36,7 +48,11 @@ const NavBar = () => {
         </Link>
 
         {/* Desktop Menu */}
-        <ul className="hidden text-sm text-gray-600 lg:flex flex-1 gap-10 justify-center items-center">
+        <ul
+          className={`hidden lg:flex flex-1 gap-10 justify-center items-center ${
+            scrolled ? "text-gray-600" : "text-gray-300"
+          }`}
+        >
           {navLinks.map(({ name, path }, index) => (
             <li key={index}>
               <NavLink
@@ -56,12 +72,13 @@ const NavBar = () => {
               Value Added Services <FaChevronDown className="ml-1" />
             </button>
             {dropdownOpen && (
-              <ul className="absolute left-1/2 transform -translate-x-1/2 mt-2 bg-white shadow-md py-2 rounded-lg w-48 text-sm text-center">
+              <ul className="absolute left-1/2 transform -translate-x-1/2 mt-2 bg-white text-gray-600 shadow-md py-2 rounded-lg w-48 text-sm text-center">
                 <li>
                   <NavLink
                     to="/campaignmonitoring"
                     className="block px-4 py-2 text-sm hover:bg-gray-200"
-                    onClick={() => setDropdownOpen(false)}              >
+                    onClick={() => setDropdownOpen(false)}
+                  >
                     Monitoring
                   </NavLink>
                 </li>
@@ -76,11 +93,41 @@ const NavBar = () => {
                   </NavLink>
                 </li>
                 <hr />
+                
+                <li>
+                  <NavLink
+                    to="/advertisingagency"
+                    className="block px-4 py-2 text-sm hover:bg-gray-200"
+                    onClick={() => setDropdownOpen(false)}
+                  >
+                    Advertising Agency
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/creativecommunication"
+                    className="block px-4 py-2 text-sm hover:bg-gray-200"
+                    onClick={() => setDropdownOpen(false)}
+                  >
+                    Creative Communication
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/digitalmarketing"
+                    className="block px-4 py-2 text-sm hover:bg-gray-200"
+                    onClick={() => setDropdownOpen(false)}
+                  >
+                    Digital Marketing 
+                  </NavLink>
+                </li>
+                <hr />
                 <li>
                   <NavLink
                     to="/orderforprinting"
                     className="block px-4 py-2 text-sm hover:bg-gray-200"
-                    onClick={() => setDropdownOpen(false)}                 >
+                    onClick={() => setDropdownOpen(false)}
+                  >
                     Order For Printing
                   </NavLink>
                 </li>
@@ -89,7 +136,8 @@ const NavBar = () => {
                   <NavLink
                     to="/orderforinstallation"
                     className="block px-4 py-2 text-sm hover:bg-gray-200"
-                    onClick={() => setDropdownOpen(false)}                 >
+                    onClick={() => setDropdownOpen(false)}
+                  >
                     Order For Installation
                   </NavLink>
                 </li>
@@ -98,7 +146,8 @@ const NavBar = () => {
                   <NavLink
                     to="/orderfordeployent"
                     className="block px-4 py-2 text-sm hover:bg-gray-200"
-                    onClick={() => setDropdownOpen(false)}                 >
+                    onClick={() => setDropdownOpen(false)}
+                  >
                     Order For Deployment
                   </NavLink>
                 </li>
@@ -107,7 +156,8 @@ const NavBar = () => {
                   <NavLink
                     to="/radioandtv"
                     className="block px-4 py-2 text-sm hover:bg-gray-200"
-                    onClick={() => setDropdownOpen(false)}                 >
+                    onClick={() => setDropdownOpen(false)}
+                  >
                     Radio and Tv
                   </NavLink>
                 </li>
@@ -128,16 +178,18 @@ const NavBar = () => {
 
         {/* Hamburger Icon for Mobile */}
         <button
-          className="lg:hidden text-[30px] text-[#0A6535]"
+          className={`lg:hidden text-[30px] ${
+            scrolled ? "text-gray-600" : "text-white"
+          }`}
           onClick={handleMenuToggle}
           aria-label={menuOpen ? "Close menu" : "Open menu"}
         >
-          {menuOpen ? <IoMdClose /> : <GiHamburgerMenu />}
+          {menuOpen ? <IoMdClose className="text-[#0A6535]" /> : <GiHamburgerMenu className="text-[#0A6535]" />}
         </button>
 
         {/* Mobile Menu */}
         {menuOpen && (
-          <div className="absolute top-full left-0 w-full bg-[#E6F6F4] shadow-lg z-10 flex flex-col items-start py-4 px-6 lg:hidden">
+          <div className="absolute top-full left-0 w-full bg-white shadow-lg z-10 flex flex-col items-start py-4 px-6 lg:hidden">
             <ul className="w-full">
               {navLinks.map(({ name, path }, index) => (
                 <li key={index} className="w-full py-2">
@@ -156,70 +208,69 @@ const NavBar = () => {
                   className="flex items-center w-full text-sm py-2 px-4 hover:bg-gray-200 rounded text-left"
                   onClick={handleDropdownToggle}
                 >
-                 Value Added Services <FaChevronDown className="ml-1" />
+                  Value Added Services <FaChevronDown className="ml-1" />
                 </button>
                 {dropdownOpen && (
                   <ul className="pl-4 mt-2 w-full">
-                      <li>
-                  <NavLink
-                    to="/campaignmonitoring"
-                    className="block px-4 py-2 text-sm hover:bg-gray-200"
-                    onClick={() => setMenuOpen(false)}
-                  >
-                    Monitoring
-                  </NavLink>
-                </li>
-                <hr />
-                <li>
-                  <NavLink
-                    to="/paidoutdoors"
-                    className="block px-4 py-2 text-sm hover:bg-gray-200"
-                    onClick={() => setMenuOpen(false)}
-                  >
-                    Paid Outdoor Monitoring
-                  </NavLink>
-                </li>
-                <hr />
-                <li>
-                  <NavLink
-                    to="/orderforprinting"
-                    className="block px-4 py-2 text-sm hover:bg-gray-200"
-                    onClick={() => setMenuOpen(false)}
-                  >
-                    Order For Printing
-                  </NavLink>
-                </li>
-                <hr />
-                <li>
-                  <NavLink
-                    to="/orderforinstallation"
-                    className="block px-4 py-2 text-sm hover:bg-gray-200"
-                    onClick={() => setMenuOpen(false)}
-                  >
-                    Order For Installation
-                  </NavLink>
-                </li>
-                <hr />
-        
-                <li>
-                  <NavLink
-                    to="/orderfordeployent"
-                    className="block px-4 py-2 text-sm hover:bg-gray-200"
-                    onClick={() => setMenuOpen(false)}
-                  >
-                    Order For Deployment
-                  </NavLink>
-                </li>
-                <hr />
-                <li>
-                  <NavLink
-                    to="/radioandtv"
-                    className="block px-4 py-2 text-sm hover:bg-gray-200"
-                    onClick={() => setMenuOpen(false)}
-                  >
-                    Radio and Tv
-                  </NavLink>
-                </li>
+                    <li>
+                      <NavLink
+                        to="/campaignmonitoring"
+                        className="block px-4 py-2 text-sm hover:bg-gray-200"
+                        onClick={() => setMenuOpen(false)}
+                      >
+                        Monitoring
+                      </NavLink>
+                    </li>
+                    <hr />
+                    <li>
+                      <NavLink
+                        to="/paidoutdoors"
+                        className="block px-4 py-2 text-sm hover:bg-gray-200"
+                        onClick={() => setMenuOpen(false)}
+                      >
+                        Paid Outdoor Monitoring
+                      </NavLink>
+                    </li>
+                    <hr />
+                    <li>
+                      <NavLink
+                        to="/orderforprinting"
+                        className="block px-4 py-2 text-sm hover:bg-gray-200"
+                        onClick={() => setMenuOpen(false)}
+                      >
+                        Order For Printing
+                      </NavLink>
+                    </li>
+                    <hr />
+                    <li>
+                      <NavLink
+                        to="/orderforinstallation"
+                        className="block px-4 py-2 text-sm hover:bg-gray-200"
+                        onClick={() => setMenuOpen(false)}
+                      >
+                        Order For Installation
+                      </NavLink>
+                    </li>
+                    <hr />
+                    <li>
+                      <NavLink
+                        to="/orderfordeployent"
+                        className="block px-4 py-2 text-sm hover:bg-gray-200"
+                        onClick={() => setMenuOpen(false)}
+                      >
+                        Order For Deployment
+                      </NavLink>
+                    </li>
+                    <hr />
+                    <li>
+                      <NavLink
+                        to="/radioandtv"
+                        className="block px-4 py-2 text-sm hover:bg-gray-200"
+                        onClick={() => setMenuOpen(false)}
+                      >
+                        Radio and Tv
+                      </NavLink>
+                    </li>
                   </ul>
                 )}
               </li>

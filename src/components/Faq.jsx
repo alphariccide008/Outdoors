@@ -25,7 +25,7 @@ export const Faq = () => {
     <>
         <div className=" mx-[10%]">
             <div className="flex items-center space-x-4">
-                <div className=" md:text-3xl text-2xl w-[10%] text-center">FAQ</div>
+                <div className=" md:text-3xl text-[20px] w-[10%] text-center">FAQ</div>
                 <div className="  flex-1 h-[2px] bg-[#480207]"></div>
                 <div className="w-auto px-2 flex items-center space-x-1">
                     

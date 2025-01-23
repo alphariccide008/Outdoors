@@ -5,6 +5,10 @@ import RadioAndTv from "./radioandtv/RadioAndTv";
 import OrderForPrinting from "./orderforprinting/OrderForPrinting";
 import PaidOutdoors from "./paidoutdoors/PaidOutdoors";
 import CampaignMonitoring from "./campaignmonitoring/CampaignMonitoring";
+import AdvertisingAgency from "./advertisingagency/AdvertisingAgency";
+import DigitalMarketing from "./digitalmarketing/DigitalMarketing";
+import CreativeCommunication from "./creativecommunication/CreativeCommunication";
+
 
 
 
@@ -16,6 +20,10 @@ export{
     OrderForPrinting, 
     PaidOutdoors,
     CampaignMonitoring,
+    AdvertisingAgency,
+    DigitalMarketing,
+    CreativeCommunication
+
 
 
 }

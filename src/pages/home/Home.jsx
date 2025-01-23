@@ -37,9 +37,9 @@ const Home = () => {
      <TopAdvertising/>
      <UseCases/>
      <StaticBillboard/>
-     <Faq/>
      <Overview/>
      <Blog/>
+     <Faq/>
      
     </>
   );

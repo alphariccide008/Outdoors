@@ -8,7 +8,8 @@ import CampaignMonitoring from "./campaignmonitoring/CampaignMonitoring";
 import AdvertisingAgency from "./advertisingagency/AdvertisingAgency";
 import DigitalMarketing from "./digitalmarketing/DigitalMarketing";
 import CreativeCommunication from "./creativecommunication/CreativeCommunication";
-
+import MediaPlanning from "./mediaplanning/MediaPlanning";
+import ExpoMarketing from "./expomarketing/ExpoMarketing";
 
 
 
@@ -22,7 +23,9 @@ export{
     CampaignMonitoring,
     AdvertisingAgency,
     DigitalMarketing,
-    CreativeCommunication
+    CreativeCommunication,
+    MediaPlanning,
+    ExpoMarketing,
 
 
 

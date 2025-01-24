@@ -31,12 +31,7 @@ const NavBar = () => {
   }, []);
 
   return (
-    <header
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-[#E6F6F4] shadow-md" : "bg-transparent"
-      }`}
-      style={{ height: "70px" }}
-    >
+    <header className={`fixed w-full z-50 transition-all duration-300 ${ scrolled ? "bg-[#E6F6F4] shadow-md" : "bg-transparent"}`} style={{ height: "70px" }}>
       <nav className="flex justify-between items-center max-w-[1200px] mx-auto px-4 sm:px-8">
         {/* Logo */}
         <Link to="/" aria-label="Home" className="text-[30px]">
@@ -83,6 +78,7 @@ const NavBar = () => {
                   </NavLink>
                 </li>
                 <hr />
+               
                 <li>
                   <NavLink
                     to="/paidoutdoors"
@@ -90,6 +86,26 @@ const NavBar = () => {
                     onClick={() => setDropdownOpen(false)}
                   >
                     Paid Outdoor Monitoring
+                  </NavLink>
+                </li>
+                <hr />
+                <li>
+                  <NavLink
+                    to="/expomarketing"
+                    className="block px-4 py-2 text-sm hover:bg-gray-200"
+                    onClick={() => setDropdownOpen(false)}
+                  >
+                    Expo Marketing
+                  </NavLink>
+                </li>
+                <hr />
+                <li>
+                  <NavLink
+                    to="/mediaplanning"
+                    className="block px-4 py-2 text-sm hover:bg-gray-200"
+                    onClick={() => setDropdownOpen(false)}
+                  >
+                    Media Planning
                   </NavLink>
                 </li>
                 <hr />

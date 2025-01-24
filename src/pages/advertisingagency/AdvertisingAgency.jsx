@@ -134,7 +134,7 @@ const AdvertisingAgency = () => {
   
 
     {/* Frequently Asked Questions */}
-    <Faq/>
+    <Faq />
 
  
  </>

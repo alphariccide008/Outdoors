@@ -1,10 +1,8 @@
 import './DigitalMarketing.css'
-
 import { FaArrowRight } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import Clients from '../../components/Clients'
 import sideImg from '../../assets/images/centraimage.jpeg'
-
 import { Faq } from '../../components/Faq'
 
 

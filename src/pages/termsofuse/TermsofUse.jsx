@@ -17,7 +17,7 @@ const TermsofUse = () => {
             </div>
 
             <div className=' mt-7 lg:mt-24 flex'>
-                <div className="hidden md:block flex-col md:w-1/4  bg-white p-4">
+                <div className="hidden md:block flex-col md:w-1/4  p-4">
                     <p className="text-[16px] py-[5%]">Changes to website terms</p>
                     <p className="text-[16px] pb-[8%]">Registration may be required to access</p>
                     <p className="text-[16px] pb-[8%]">UK Modern Slavery Policy</p>

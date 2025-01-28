@@ -7,7 +7,7 @@ const Billboard = () => {
             
         <div className="justify-center mt-[-9%]  items-center py-[2%]">
             
-            <div className=" hidden md:block  bg-white rounded-lg border">
+            <div className=" hidden md:block  bg-white text-gray-700 rounded-lg border">
                 <h3 className="text-sm font-semibold pt-4">Search through 5103  Billboards in Nigeria</h3>
                 <div className="flex justify-center items-center py-[2%]">
             <div className="flex py-[2%] justify-center items-center w-3/4">
@@ -86,7 +86,7 @@ const Billboard = () => {
             </div>
         </div>
         <div className="text-start my-3">
-            <h1 className="text-[#66666633] " style={{fontSize:'25px'}}>Outdoors.ng a top marketing and advertising agency in Nigeria, specializes in data driven marketing solutions tailored to boost your brands visibility and achieve measurable results.</h1>
+            <h1 className="text-[#96878733] " style={{fontSize:'25px'}}>Outdoors.ng a top marketing and advertising agency in Nigeria, specializes in data driven marketing solutions tailored to boost your brands visibility and achieve measurable results.</h1>
         </div>
         </div>
     </>

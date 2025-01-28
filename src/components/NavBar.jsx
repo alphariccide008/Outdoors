@@ -8,7 +8,12 @@ import { Link, NavLink } from "react-router-dom";
 import { ThemeContext } from "../../ThemeContext";
 import './NavBar.css'
 
+
 const NavBar = () => {
+  
+
+
+
   const { isDarkMode, toggleTheme } = useContext(ThemeContext);
   const [menuOpen, setMenuOpen] = useState(false); // State to manage the hamburger menu
   const [dropdownOpen, setDropdownOpen] = useState(false); // State for dropdown menu

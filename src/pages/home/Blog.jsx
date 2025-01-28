@@ -1,11 +1,27 @@
 import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import image1 from '../../assets/images/billboardimg/Mobile.jpeg';
 import image2 from '../../assets/images/billboardimg/Billboardimage.jpeg';
 import image3 from '../../assets/images/billboardimg/LED.jpeg';
 import image4 from '../../assets/images/darkmode/installation.jpeg';
 import image5 from '../../assets/images/Creativeimage.jpeg';
 
+
+
 const Blog = () => {
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      const element = document.querySelector(hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [hash]);
+
+
+
   const slides = [
     { id: 1, image: image2, alt: "Slide 1" ,textContent: "Social Media advertising Platforms" },
     { id: 2, image: image3, alt: "Slide 2",textContent: "Social Media advertising Platforms" },
@@ -37,7 +53,7 @@ const Blog = () => {
   }, []);
 
   return (
-    <div className="relative px-[1%] py-[3%]">
+    <div id="blog" className="relative px-[1%] py-[3%]">
       <div>
         <h1 className="lg:text-3xl text-2xl pb-5 pl-3 font-bold">BLOG</h1>
         <p className="py-2 pl-3" style={{ fontSize:'12px'}}>They are those printed billboards on the side of the road. You can use them to target those who are in vehicles, because many <br /> customers make their purchasing decisions in vehicles.</p>

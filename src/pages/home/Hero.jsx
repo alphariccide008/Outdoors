@@ -9,7 +9,7 @@ const Hero = () => {
             <div className="flex-col md:w-1/2">
                 <h1 className='text-3xl pb-3 font-semibold text-center md:text-start text-[#042313]'>Increase <span className='text-[#FD6821] google-font'>Awareness</span></h1>
                 <h1 className='text-3xl pb-5 text-center md:text-start font-semibold text-[#042313]'>Drive Sales</h1>
-                <p className='pr-[5%] text-center md:text-start text-sm'>increase brand visibility and revenue with Outdoor advertising in Nigeria</p>
+                <p className='pr-[5%] text-center md:text-start text-sm text-gray-700'>increase brand visibility and revenue with Outdoor advertising in Nigeria</p>
                 
                 <div className="flex flex-wrap justify-center md:justify-start pb-16 lg:pb-32 mt-4 text-center">
                 <Link

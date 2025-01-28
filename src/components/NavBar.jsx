@@ -1,12 +1,15 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { navLinks } from "../data"; // Ensure `navLinks` is correctly imported
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 import { FaChevronDown } from "react-icons/fa"; // Import dropdown icon
 import { logo } from "../assets/icons"; // Ensure `logo` points to a valid image
 import { Link, NavLink } from "react-router-dom";
+import { ThemeContext } from "../../ThemeContext";
+import './NavBar.css'
 
 const NavBar = () => {
+  const { isDarkMode, toggleTheme } = useContext(ThemeContext);
   const [menuOpen, setMenuOpen] = useState(false); // State to manage the hamburger menu
   const [dropdownOpen, setDropdownOpen] = useState(false); // State for dropdown menu
   const [scrolled, setScrolled] = useState(false); // State to track scroll
@@ -41,6 +44,8 @@ const NavBar = () => {
             alt="Company logo"
           />
         </Link>
+   
+
 
         {/* Desktop Menu */}
         <ul
@@ -86,6 +91,27 @@ const NavBar = () => {
                     onClick={() => setDropdownOpen(false)}
                   >
                     Paid Outdoor Monitoring
+                  </NavLink>
+                </li>
+                <hr />
+                <li>
+                  <NavLink
+                    to="/pr"
+                    className="block px-4 py-2 text-sm hover:bg-gray-200"
+                    onClick={() => setDropdownOpen(false)}
+                  >
+                    Pr Page
+                  </NavLink>
+                </li>
+                <hr />
+
+                <li>
+                  <NavLink
+                    to="/termsofuse"
+                    className="block px-4 py-2 text-sm hover:bg-gray-200"
+                    onClick={() => setDropdownOpen(false)}
+                  >
+                    Terms of use
                   </NavLink>
                 </li>
                 <hr />
@@ -184,6 +210,12 @@ const NavBar = () => {
 
         {/* Desktop Login/Register */}
         <div className="hidden lg:flex items-center gap-6">
+        
+        <input id="checkboxInput" type="checkbox"  onClick={toggleTheme}/>
+            <label className="toggleSwitch px-[5%]" for="checkboxInput">
+            
+            </label>
+       
           <Link
             to="#"
             className="py-2 px-6 text-white bg-[#0A6535] rounded-3xl hover:bg-[#085827] transition-all duration-300"
@@ -193,6 +225,16 @@ const NavBar = () => {
         </div>
 
         {/* Hamburger Icon for Mobile */}
+      
+        <div className="md:hidden pt-4">
+        <label class="switch" >
+            <input type="checkbox" onClick={toggleTheme}/>
+            <span class="slider">
+            <svg class="slider-icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"><path fill="none" d="m4 16.5 8 8 16-16"></path></svg> 
+            </span>
+        </label>
+        </div>
+        
         <button
           className={`lg:hidden text-[30px] ${
             scrolled ? "text-gray-600" : "text-white"
@@ -200,6 +242,7 @@ const NavBar = () => {
           onClick={handleMenuToggle}
           aria-label={menuOpen ? "Close menu" : "Open menu"}
         >
+
           {menuOpen ? <IoMdClose className="text-[#0A6535]" /> : <GiHamburgerMenu className="text-[#0A6535]" />}
         </button>
 
@@ -293,6 +336,7 @@ const NavBar = () => {
             </ul>
 
             <div className="w-full mt-4">
+
               <Link
                 to="#"
                 className="w-full flex justify-center items-center py-3 px-4 bg-[#0A6535] rounded-3xl text-white text-center hover:bg-[#085827] transition-all duration-300"

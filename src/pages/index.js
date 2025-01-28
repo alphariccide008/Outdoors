@@ -10,6 +10,8 @@ import DigitalMarketing from "./digitalmarketing/DigitalMarketing";
 import CreativeCommunication from "./creativecommunication/CreativeCommunication";
 import MediaPlanning from "./mediaplanning/MediaPlanning";
 import ExpoMarketing from "./expomarketing/ExpoMarketing";
+import TermsofUse from "./termsofuse/TermsofUse";
+import PrPage from "./prpage/PrPage";
 
 
 
@@ -26,6 +28,8 @@ export{
     CreativeCommunication,
     MediaPlanning,
     ExpoMarketing,
+    TermsofUse,
+    PrPage
 
 
 

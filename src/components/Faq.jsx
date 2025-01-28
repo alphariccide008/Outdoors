@@ -23,13 +23,13 @@ export const Faq = () => {
     };
   return (
     <>
-        <div className=" mx-[10%]">
+        <div className=" mx-[10%] mb-[5%]">
             <div className="flex items-center space-x-4">
-                <div className=" md:text-3xl text-[20px] w-[10%] text-center">FAQ</div>
-                <div className="  flex-1 h-[2px] bg-[#480207]"></div>
+                <div className=" md:text-3xl text-[20px] w-[10%] text-[#00A991] text-center">FAQ</div>
+                <div className="  flex-1 h-[2px] bg-[#00A991]"></div>
                 <div className="w-auto px-2 flex items-center space-x-1">
                     
-                    <FaStar className="text-[#480207] text-2xl" />
+                    <FaStar className="text-[#00A991] text-2xl" />
                 </div>
             </div>
             <div className="flex flex-col text-sm mt-8 md:px-[5%] px-[2%]">

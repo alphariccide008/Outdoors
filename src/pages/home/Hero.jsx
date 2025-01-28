@@ -26,7 +26,9 @@ const Hero = () => {
                     >
                         Get discounted Billboard <FaCheckCircle className="mt-1 mx-1" />
                     </Link>
+
                 </div>
+                
 
                 
 

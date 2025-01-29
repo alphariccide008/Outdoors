@@ -40,8 +40,8 @@ const Carousel = () => {
 
   return (
     <>
-        <div className="relative px-[1%] py-[3%]">
-            <div className="text-3xl pb-5 pl-10 font-semibold">
+        <div className="relative px-[1%] mt-16 py-[3%]">
+            <div className="text-[40px] md:text-[64px] pb-5 pl-10 font-semibold">
                 <h1 className=" pb-5 "><i>DISCOVER</i> </h1>
                 <h1><i>OUR <span className="text-[#FD6821]">EXPERTISE</span></i></h1>
             </div>
@@ -56,10 +56,10 @@ const Carousel = () => {
                 >
                 {slides.map((slide) => (
                     <div key={slide.id}  className="w-1/3 mx-2 border px-4 pt-[3%]  rounded-lg flex-shrink-0"
-                    style={{ height: "200px" , width:'20%' }}>
+                    style={{ height: "282px" , width:'20%' }}>
                     
-                    <h1>{slide.header}</h1>
-                    <p className="text-sm text-[#595959]" style={{fontSize: '10px'}}>{slide.bodyOf}</p>
+                    <h1 className="text-[20px] py-[3%]">{slide.header}</h1>
+                    <p className="text-sm text-[#595959]" style={{fontSize: '13px'}}>{slide.bodyOf}</p>
                     
                     </div>
                 ))}
@@ -101,8 +101,8 @@ const Carousel = () => {
         </div>
 
         <div className="mx-[10%] px-[3%] lg:px-[5%] pt-[10%] pb-[3%] text-center">
-            <h2 className="font-semibold text-2xl pb-5">Conquer Nigeria Market</h2>
-            <p className="text-sm text-[#595959]" style={{fontSize:'12px'}}>
+            <h2 className="font-semibold text-[25px] md:text-[32px] pb-5">Conquer Nigeria Market</h2>
+            <p className="text-[14px] md:text-[20px] text-[#595959]">
             Penetrating the Nigerian market requires a partner who understands the market trends of the country.  At Outdoors.ng, a leading advertising agency in Nigeria, we're more than just marketing specialists – we're cultural guides.
             Our deep understanding of the Nigerian Market allows us to craft marketing campaigns that connect on a deeper level. We leverage local insights and trends to ensure your brand message hits the right note with your target audience.
 

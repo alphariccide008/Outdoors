@@ -38,9 +38,9 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div className="relative px-[1%] py-[3%]">
+    <div className="relative px-[1%] mt-20 py-[3%]">
       <div>
-        <h1 className="text-2xl pb-5 pl-10">PORTFOLIO</h1>
+        <h1 className="text-[40px] md:text-[64px] pb-5 pl-10">PORTFOLIO</h1>
       </div>
 
       {/*Desktop Slides */}
@@ -57,7 +57,7 @@ const Carousel = () => {
               src={slide.image}
               alt={slide.alt}
               className="w-1/3 mx-2  rounded-lg flex-shrink-0"
-              style={{ height: "200px" , width:'20%' }} // Keeping the same height as before
+              style={{ height: "282px" , width:'20%' }} // Keeping the same height as before
             />
           ))}
         </div>

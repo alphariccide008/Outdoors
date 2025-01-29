@@ -8,11 +8,11 @@ const Billboard = () => {
         <div className="justify-center mt-[-9%]  items-center py-[2%]">
             
             <div className=" hidden md:block  bg-white text-gray-700 rounded-lg border">
-                <h3 className="text-sm font-semibold pt-4">Search through 5103  Billboards in Nigeria</h3>
+                <h3 className="md:text-[20px] font-semibold pt-4">Search through 5103  Billboards in Nigeria</h3>
                 <div className="flex justify-center items-center py-[2%]">
             <div className="flex py-[2%] justify-center items-center w-3/4">
                 <div className="w-1/3 border-color pr-4">
-                <label htmlFor="" className="text-black block text-center" style={{ fontSize: "13px" }}>
+                <label htmlFor="" className="text-black block text-[18px] text-center" style={{ fontSize: "13px" }}>
                     Select Type
                 </label>
                 <select
@@ -49,8 +49,8 @@ const Billboard = () => {
                 <div className="w-1/3 ml-9">
                 <Link
                     to="#"
-                    className="py-2 text-center lg:pl-4 pl-14 lg:pr-3 text-white bg-[#0A6535] rounded-3xl block"
-                    style={{ fontSize: "10px" }}
+                    className="py-2 text-[14px] text-center lg:pl-4 pl-14 lg:pr-3 text-white bg-[#0A6535] rounded-3xl block"
+                    
                 >
                     Find Billboards
                 </Link>
@@ -86,7 +86,7 @@ const Billboard = () => {
             </div>
         </div>
         <div className="text-start my-3">
-            <h1 className="text-[#96878733] " style={{fontSize:'25px'}}>Outdoors.ng a top marketing and advertising agency in Nigeria, specializes in data driven marketing solutions tailored to boost your brands visibility and achieve measurable results.</h1>
+            <h1 className="text-[#96878733] " style={{fontSize:'28px'}}>Outdoors.ng a top marketing and advertising agency in Nigeria, specializes in data driven marketing solutions tailored to boost your brands visibility and achieve measurable results.</h1>
         </div>
         </div>
     </>

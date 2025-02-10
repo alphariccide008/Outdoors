@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 
+
 const Billboard = () => {
   return (
     <>
@@ -85,9 +86,8 @@ const Billboard = () => {
                </form>
             </div>
         </div>
-        <div className="text-start my-3">
-            <h1 className="text-[#96878733] " style={{fontSize:'28px'}}>Outdoors.ng a top marketing and advertising agency in Nigeria, specializes in data driven marketing solutions tailored to boost your brands visibility and achieve measurable results.</h1>
-        </div>
+       
+       
         </div>
     </>
   )

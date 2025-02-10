@@ -53,10 +53,10 @@ const Blog = () => {
   }, []);
 
   return (
-    <div id="blog" className="relative px-[1%] py-[3%]">
+    <div id="blog" className="relative mt-4 px-[1%] py-[3%]">
       <div>
-        <h1 className="lg:text-3xl text-2xl pb-5 pl-3 font-bold">BLOG</h1>
-        <p className="py-2 pl-3" style={{ fontSize:'12px'}}>They are those printed billboards on the side of the road. You can use them to target those who are in vehicles, because many <br /> customers make their purchasing decisions in vehicles.</p>
+        <h1 className="lg:text-[60px] text-2xl pb-5 pl-3 font-bold">BLOG</h1>
+        <p className="py-2 text-[12px] md:text-[16px] pl-3" >They are those printed billboards on the side of the road. You can use them to target those who are in vehicles, because many <br /> customers make their purchasing decisions in vehicles.</p>
       </div>
 
       {/*Desktop Slides */}
@@ -79,7 +79,7 @@ const Blog = () => {
                 src={slide.image}
                 alt={slide.alt}
                
-                style={{ height: "200px", width: "100%", borderTopLeftRadius:'2px', borderTopRightRadius:'2px' }}
+                style={{ height: "270px", width: "100%", borderTopLeftRadius:'2px', borderTopRightRadius:'2px' }}
                 />
                 <h1 
                     className="text-[#0A6535] py-3 bg-[#E6F6F4] px-5 text-center" 

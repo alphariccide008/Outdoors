@@ -88,6 +88,16 @@ const NavBar = () => {
                   </NavLink>
                 </li>
                 <hr />
+                <li>
+                  <NavLink
+                    to="/billboardsearch"
+                    className="block px-4 py-2 text-sm hover:bg-gray-200"
+                    onClick={() => setDropdownOpen(false)}
+                  >
+                    Billboard Search
+                  </NavLink>
+                </li>
+                <hr />
                
                 <li>
                   <NavLink
@@ -101,7 +111,7 @@ const NavBar = () => {
                 <hr />
                 <li>
                   <NavLink
-                    to="/pr"
+                    to="/prpage"
                     className="block px-4 py-2 text-sm hover:bg-gray-200"
                     onClick={() => setDropdownOpen(false)}
                   >

@@ -12,6 +12,8 @@ import MediaPlanning from "./mediaplanning/MediaPlanning";
 import ExpoMarketing from "./expomarketing/ExpoMarketing";
 import TermsofUse from "./termsofuse/TermsofUse";
 import PrPage from "./prpage/PrPage";
+import BillBoardSearch from "./billboardsearch/BillBoardSearch";
+import AboutUs from "./aboutus/AboutUs";
 
 
 
@@ -29,7 +31,9 @@ export{
     MediaPlanning,
     ExpoMarketing,
     TermsofUse,
-    PrPage
+    PrPage, 
+    BillBoardSearch, 
+    AboutUs
 
 
 

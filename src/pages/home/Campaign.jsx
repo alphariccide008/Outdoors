@@ -36,7 +36,7 @@ const Campaign = () => {
    <>
          <div className="relative px-[1%] mt-[3%]  py-[3%]">
       <div>
-        <h1 className="text-3xl py-3 pb-5 pl-10">CAMPAIGN</h1>
+        <h1 className="text-[40px] md:text-[64px] pb-5 pl-10 font-semibold py-3">CAMPAIGN</h1>
       </div>
 
       {/*Desktop Slides */}
@@ -56,7 +56,7 @@ const Campaign = () => {
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-              style={{ height: "200px" , width:'20%' }} // Keeping the same height as before
+              style={{ height: "300px" , width:'20%' }} // Keeping the same height as before
             ></iframe>
           ))}
         </div>
@@ -79,7 +79,7 @@ const Campaign = () => {
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-              style={{ height: "210px" , width:'50%' }} // Keeping the same height as before
+              style={{ height: "255px" , width:'70%' }} // Keeping the same height as before
             ></iframe>
           ))}
         </div>
@@ -101,8 +101,8 @@ const Campaign = () => {
     </div>
     <div className="mx-[15%] mt-[4%] mb-[4%] flex flex-col items-center text-center">
         {/* Heading */}
-        <h1 className="lg:text-2xl font-bold mt-2 mb-4" style={{ fontSize: '17px' }}>
-            Xpark360s Creative Campaign for LetsChat Lifelong Connections Success
+        <h1 className="lg:text-2xl font-bold mt-2 mb-4" style={{ fontSize: '30px' }}>
+            Outdoors Creative Campaign for LetsChat Lifelong Connections Success
         </h1>
         <Link 
             href="#" 
@@ -114,16 +114,16 @@ const Campaign = () => {
 
         {/* Ready to Grow Section */}
         <div className="py-[9%]">
-            <h1 className="font-bold text-2xl py-3">
+            <h1 className="font-bold text-[38px] py-3">
             <i>READY TO <span className="text-[#FD6821]">GROW</span> WITH AN ADVERTISING COMPANY?</i>
             </h1>
 
             {/* Description */}
             <p 
             className="text-[#595959] mb-5" 
-            style={{ fontSize: '12px', lineHeight: '1.6' }}
+            style={{ fontSize: '16px', lineHeight: '1.5' }}
             >
-            Leverage on years of outdoor advertising expertise to achieve brand awareness and increase sales. Enjoy massive 
+            Leverage on years of outdoor advertising expertise to achieve brand awareness and increase sales. <br /> Enjoy massive 
             reach with strategic out-of-home advertising. 
             <br /> 
             Place your business where it counts.

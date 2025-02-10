@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-import {  Home, OrderForDeployment, OrderForInstallation, RadioAndTv, OrderForPrinting, PaidOutdoors, CampaignMonitoring, AdvertisingAgency, DigitalMarketing,CreativeCommunication, MediaPlanning , ExpoMarketing, TermsofUse, PrPage} from "./pages";
+import {  Home, OrderForDeployment, OrderForInstallation, RadioAndTv, OrderForPrinting, PaidOutdoors, CampaignMonitoring, AdvertisingAgency, DigitalMarketing,CreativeCommunication, MediaPlanning , ExpoMarketing, TermsofUse, PrPage, BillBoardSearch, AboutUs} from "./pages";
 
 
 export default function App() {
@@ -23,6 +23,9 @@ export default function App() {
         <Route path="expomarketing" element={<ExpoMarketing/>} />
         <Route path="termsofuse" element={<TermsofUse/>} />
         <Route path="prpage" element={<PrPage/>} />
+        <Route path="billboardsearch" element={<BillBoardSearch/>} />
+        <Route path="about-us" element={<AboutUs/>} />
+
 
         
       </Routes>

@@ -24,9 +24,9 @@ const UseCases = () => {
     };
   return (
     <>
-        <div className=" mx-[10%] mt-[8%] mb-[12%]">
-            <h1 className="text-3xl pb-7">Use Cases</h1>
-            <p className="text-[#595959] pb-6" style={{fontSize:'14px'}}>Leverage on years of outdoors advertising expertise to achieve brand awareness and increase sales. Enjoy massive reach with strategicout-of-home advertising. Place your business where it counts.</p>
+        <div className=" mx-[10%] mt-[3%] mb-[12%]">
+            <h1 className="text-3xl md:text-[60px] pb-7">Use Cases</h1>
+            <p className="text-[#595959] text-[14px] md:text-[18px] pb-6">Leverage on years of outdoors advertising expertise to achieve brand awareness and increase sales. Enjoy massive reach with strategicout-of-home advertising. Place your business where it counts.</p>
            <hr />
             <div className="flex flex-col  mb-3 text-sm mt-8 px-[2%] lg:px-[5%]">
                 {/* Question Section */}

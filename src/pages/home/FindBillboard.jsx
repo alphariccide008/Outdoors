@@ -5,8 +5,8 @@ import Getstarted from '../../components/Getstarted';
 const findBillboard = () => {
   return (
     <>
-        <div className="text-center my-[10%] mx-6 lg:mx-[3%]">
-            <h1 className="text-3xl font-bold">
+        <div className="text-center mb-[10%] mx-6 lg:mx-[3%]">
+            <h1 className="text-3xl md:text-[40px] font-bold">
                 <i>FIND BILLBOARDS IN NIGERIA</i>
             </h1>
             <p className="py-3 text-[#595959]">

@@ -1,21 +1,23 @@
 import React, { useState, useEffect } from "react";
+import { FaHospitalAlt, FaBusAlt, FaMapMarkerAlt, FaFileContract } from "react-icons/fa";
+
 
 
 const Carousel = () => {
   const slides = [
-    { id: 1, header: "OOH", bodyOf: "We speak the language, understand the cultural nuances, and know how to connect with Nigerian consumers.and know how to connect with Nigerian consumers.h Nigerian consumers.and know how to connect with Nigerian consumers." },
-    { id: 2, header: "BRT Buses", bodyOf: "We speak the language, understand the cultural nuances, and know how to connect with Nigerian consumers.and know how to connect with Nigerian consumers.h Nigerian consumers.and know how to connect with Nigerian consumers." },
-    { id: 3, header: "Tracking", bodyOf: "We speak the language, understand the cultural nuances, and know how to connect with Nigerian consumers.and know how to connect with Nigerian consumers.h Nigerian consumers.and know how to connect with Nigerian consumers." },
-    { id: 4, header: "Marketing Mastery", bodyOf: "We speak the language, understand the cultural nuances, and know how to connect with Nigerian consumers.and know how to connect with Nigerian consumers.h Nigerian consumers.and know how to connect with Nigerian consumers." },
-    { id: 5, header: "Local Expertise", bodyOf: "We speak the language, understand the cultural nuances, and know how to connect with Nigerian consumers.and know how to connect with Nigerian consumers.h Nigerian consumers.and know how to connect with Nigerian consumers." },
-    { id: 6, header: "Proven result", bodyOf: "We speak the language, understand the cultural nuances, and know how to connect with Nigerian consumers.and know how to connect with Nigerian consumers.h Nigerian consumers.and know how to connect with Nigerian consumers." },
+    { id: 1, header: "OOH", icon:<FaHospitalAlt/>, bodyOf: "We speak the language, understand the cultural nuances, and know how to connect with Nigerian consumers.and know how to connect with Nigerian consumers.h Nigerian consumers.and know how to connect with Nigerian consumers." },
+    { id: 2, header: "BRT Buses",icon:<FaBusAlt/>, bodyOf: "We speak the language, understand the cultural nuances, and know how to connect with Nigerian consumers.and know how to connect with Nigerian consumers.h Nigerian consumers.and know how to connect with Nigerian consumers." },
+    { id: 3, header: "Tracking", icon:<FaMapMarkerAlt/>, bodyOf: "We speak the language, understand the cultural nuances, and know how to connect with Nigerian consumers.and know how to connect with Nigerian consumers.h Nigerian consumers.and know how to connect with Nigerian consumers." },
+    { id: 4, header: "Marketing Mastery", icon:<FaFileContract/> ,bodyOf: "We speak the language, understand the cultural nuances, and know how to connect with Nigerian consumers.and know how to connect with Nigerian consumers.h Nigerian consumers.and know how to connect with Nigerian consumers." },
+    { id: 5, header: "Local Expertise", icon:<FaMapMarkerAlt/>, bodyOf: "We speak the language, understand the cultural nuances, and know how to connect with Nigerian consumers.and know how to connect with Nigerian consumers.h Nigerian consumers.and know how to connect with Nigerian consumers." },
+    { id: 6, header: "Proven result", icon:<FaFileContract/>, bodyOf: "We speak the language, understand the cultural nuances, and know how to connect with Nigerian consumers.and know how to connect with Nigerian consumers.h Nigerian consumers.and know how to connect with Nigerian consumers." },
    
   ];
   
   const slides1 = [
-    { id: 1, header: "OOH", bodyOf: "We speak the language, understand the cultural nuances, and know how to connect with Nigerian consumers.and know how to connect with Nigerian consumers.h Nigerian consumers.and know how to connect with Nigerian consumers." },
-    { id: 2, header: "BRT Buses", bodyOf: "We speak the language, understand the cultural nuances, and know how to connect with Nigerian consumers.and know how to connect with Nigerian consumers.h Nigerian consumers.and know how to connect with Nigerian consumers." },
-    { id: 3, header: "Tracking", bodyOf: "We speak the language, understand the cultural nuances, and know how to connect with Nigerian consumers.and know how to connect with Nigerian consumers.h Nigerian consumers.and know how to connect with Nigerian consumers." },
+    { id: 1, header: "OOH", icon:<FaHospitalAlt/>, bodyOf: "We speak the language, understand the cultural nuances, and know how to connect with Nigerian consumers.and know how to connect with Nigerian consumers.h Nigerian consumers.and know how to connect with Nigerian consumers." },
+    { id: 2, header: "BRT Buses", icon:<FaBusAlt/>, bodyOf: "We speak the language, understand the cultural nuances, and know how to connect with Nigerian consumers.and know how to connect with Nigerian consumers.h Nigerian consumers.and know how to connect with Nigerian consumers." },
+    { id: 3, header: "Tracking",icon:<FaMapMarkerAlt/>, bodyOf: "We speak the language, understand the cultural nuances, and know how to connect with Nigerian consumers.and know how to connect with Nigerian consumers.h Nigerian consumers.and know how to connect with Nigerian consumers." },
 
    
   ];
@@ -55,10 +57,11 @@ const Carousel = () => {
                 }}
                 >
                 {slides.map((slide) => (
-                    <div key={slide.id}  className="w-1/3 mx-2 border px-4 pt-[3%]  rounded-lg flex-shrink-0"
-                    style={{ height: "282px" , width:'20%' }}>
+                    <div key={slide.id}  className="w-1/3 mx-2 border px-4 py-[3%]  rounded-lg flex-shrink-0"
+                    style={{ height: "300px" , width:'20%' }}>
+                    <h1 className="text-[40px] text-[#FED0BA] pb-4">{slide.icon}</h1>
                     
-                    <h1 className="text-[20px] py-[3%]">{slide.header}</h1>
+                    <h1 className="text-[20px] font-semibold py-[3%]">{slide.header}</h1>
                     <p className="text-sm text-[#595959]" style={{fontSize: '13px'}}>{slide.bodyOf}</p>
                     
                     </div>
@@ -75,8 +78,8 @@ const Carousel = () => {
                 >
                 {slides.map((slide) => (
                     <div key={slide.id}  className="w-1/3 mx-2 border px-4 pt-[3%]  rounded-lg flex-shrink-0"
-                    style={{ height: "200px" , width:'50%' }}>
-                    
+                    style={{ height: "255px" , width:'50%' }}>
+                    <h1 className="text-[23px] text-[#FED0BA] pb-4">{slide.icon}</h1>
                     <h1>{slide.header}</h1>
                     <p className="text-sm text-[#595959]" style={{fontSize: '10px'}}>{slide.bodyOf}</p>
                     
@@ -100,7 +103,7 @@ const Carousel = () => {
             </button>
         </div>
 
-        <div className="mx-[10%] px-[3%] lg:px-[5%] pt-[10%] pb-[3%] text-center">
+        <div className="mx-[10%] px-[3%] lg:px-[5%] pt-[4c%] pb-[3%] text-center">
             <h2 className="font-semibold text-[25px] md:text-[32px] pb-5">Conquer Nigeria Market</h2>
             <p className="text-[14px] md:text-[20px] text-[#595959]">
             Penetrating the Nigerian market requires a partner who understands the market trends of the country.  At Outdoors.ng, a leading advertising agency in Nigeria, we're more than just marketing specialists – we're cultural guides.
@@ -113,10 +116,10 @@ const Carousel = () => {
                 <div className=" md:flex justify-center items-center">
                 {slides1.map((slide) => (
                     <div key={slide.id}  className="lg:w-1/3 my-[2%]  lg:mx-2 flex-col border px-4 pt-[3%]  rounded-lg"
-                    style={{ height: "200px"  }}>
-                    
-                    <h1>{slide.header}</h1>
-                    <p className="text-sm text-[#595959]" style={{fontSize: '10px'}}>{slide.bodyOf}</p>
+                    style={{ height: "300px"  }}>
+                    <h1 className="text-[40px] text-[#FED0BA] py-5">{slide.icon}</h1>                  
+                    <h1 className="text-[20px] pb-5 font-semibold">{slide.header}</h1>
+                    <p className="text-sm text-[#595959]" style={{fontSize: '13px'}}>{slide.bodyOf}</p>
                     
                     </div>
                 ))}

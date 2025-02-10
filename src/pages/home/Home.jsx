@@ -18,6 +18,9 @@ import UseCases from "./UseCases";
 import StaticBillboard from "./StaticBillboard";
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
+import OutdoorsStatement from "./OutdoorsStatement";
+import Reference from "./Reference";
+import DiffBillboard from "./DiffBillboard";
 
 
 
@@ -59,6 +62,7 @@ const Home = () => {
     <>
      <Hero/>
      <Billboard/>
+     <OutdoorsStatement/>
      <Clients/>
      <MarketAgency/>
      <Carousel/>
@@ -68,6 +72,8 @@ const Home = () => {
      <FindBillboard/>
      <HomeDeals/>
      <Banner/>
+     <Reference/>
+     <DiffBillboard/>
      <TopAdvertising/>
      <UseCases/>
      <StaticBillboard/>

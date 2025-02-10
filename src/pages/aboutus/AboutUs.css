@@ -1,0 +1,7 @@
+.billboard-banner{
+    background-image:linear-gradient(to left, rgba(10, 10, 11, 0.6),rgba(10, 10, 11, 0.6)), url("/billboard.jpeg");  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+}

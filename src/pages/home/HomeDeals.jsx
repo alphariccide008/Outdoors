@@ -7,8 +7,8 @@ const HomeDeals = () => {
     <>
         <div className="lg:mx-[3.5%] ">
             <div className='mx-[10%]'>
-                <h1 className="lg:text-3xl text-2xl mt-[15%]  font-bold"><i>OUR TOP <span className="text-[#FD6821]">HOME</span> DEALS</i></h1>
-                <p className="text-[#595959]">A quick view of our best outdoors deals</p>
+                <h1 className="lg:text-[48px] text-2xl mt-[15%]  font-bold"><i>OUR TOP <span className="text-[#FD6821]">HOME</span> DEALS</i></h1>
+                <p className="text-[#595959] pt-4 text-[18px]">A quick view of our best outdoors deals</p>
             </div>
 
         <div className="text-center ">

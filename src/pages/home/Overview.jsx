@@ -5,7 +5,7 @@ const Overview = () => {
     <>
         <div className=" mx-[10%] mt-[10%]">
         <div className="flex items-center space-x-4 flex-wrap">
-  <div className="text-[40px] text-[#00A991] w-auto text-center">OVERVIEW</div>
+  <div className="lg:text-[40px] text-[20px] text-[#00A991] w-auto text-center">OVERVIEW</div>
   <div className="flex-1 h-[2px] bg-[#00A991]"></div>
   <div className="w-auto px-2 flex items-center space-x-1">
     <FaStar className="text-[#00A991] text-2xl" />

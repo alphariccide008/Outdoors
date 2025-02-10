@@ -101,7 +101,7 @@ const Campaign = () => {
     </div>
     <div className="mx-[15%] mt-[4%] mb-[4%] flex flex-col items-center text-center">
         {/* Heading */}
-        <h1 className="lg:text-2xl font-bold mt-2 mb-4" style={{ fontSize: '30px' }}>
+        <h1 className="lg:text-[30px] text-[20px] font-bold mt-2 mb-4">
             Outdoors Creative Campaign for LetsChat Lifelong Connections Success
         </h1>
         <Link 
@@ -114,7 +114,7 @@ const Campaign = () => {
 
         {/* Ready to Grow Section */}
         <div className="py-[9%]">
-            <h1 className="font-bold text-[38px] py-3">
+            <h1 className="font-bold text-[20px]  md:text-[38px] py-3">
             <i>READY TO <span className="text-[#FD6821]">GROW</span> WITH AN ADVERTISING COMPANY?</i>
             </h1>
 

@@ -35,7 +35,7 @@ const TopAdvertising = () => {
                 <h1 className="text-3xl ">Why you should be using Billboard advertising?</h1>
                 <div className="md:flex py-[5%]">
                 <div className="flex flex-col items-center my-2 py-[5%] md:w-1/2 mx-3 border border-[#E6E6E6] rounded-lg px-2">
-                <h1 className="text-[20px] text-[#FED0BA] md:text-[40px] pb-5 flex justify-center">
+                <h1 className="text-[40px] text-[#FED0BA] md:text-[40px] pb-5 flex justify-center">
                     <FaFileContract />
                 </h1>
                 <h1 className="py-4 text-[24px]">Effectiveness of Billboards</h1>
@@ -45,7 +45,7 @@ const TopAdvertising = () => {
                 </div>
 
                 <div className="flex flex-col items-center my-2 py-[5%] md:w-1/2 mx-3 border border-[#E6E6E6] rounded-lg px-2">
-                <h1 className="text-[20px] text-[#FED0BA] md:text-[40px] pb-5 flex justify-center">
+                <h1 className="text-[40px] text-[#FED0BA] md:text-[40px] pb-5 flex justify-center">
                     <FaFileContract />
                 </h1>
                 <h1 className="py-4 text-[24px]">Billboard availability in Nigeria</h1>
@@ -55,7 +55,7 @@ const TopAdvertising = () => {
 
 
                 <div className="flex flex-col items-center my-2 py-[5%] md:w-1/2 mx-3 border border-[#E6E6E6] rounded-lg px-2">
-                <h1 className="text-[20px] text-[#FED0BA] md:text-[40px] pb-5 flex justify-center">
+                <h1 className="text-[40px] text-[#FED0BA] md:text-[40px] pb-5 flex justify-center">
                     <FaFileContract />
                 </h1>
                 <h1 className="py-4 text-[24px]">Affordable Billboard Advertising</h1>
